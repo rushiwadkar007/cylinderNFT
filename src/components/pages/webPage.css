@@ -1,0 +1,126 @@
+.container {
+    position: relative;
+    color: #ffffff;
+}
+.centered-logo{
+    position: absolute;
+    top: 4%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: lighter;
+}
+.centered-banner{
+    position: absolute;
+    top:8%;
+    right: 12%;
+}
+.left-text {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    width:1500px;
+}
+.left-down {
+    position: absolute;
+    top: 58%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    width: 1000px
+}
+.centered-bannerParis{
+    position: absolute;
+    top:63%;
+    right: 20%;
+}
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  .icons{
+      position: absolute;
+      top: 95%;
+      left: 44%
+  }
+  .icons {
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 4rem;
+  }
+
+.icon{
+    position: absolute;
+    top: 95%;
+    left: 48%
+}
+.icon {
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 4rem;
+}
+.icon-1{
+    position: absolute;
+    top: 95%;
+    left: 52%
+}
+.icon-1{
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 4rem;
+  }
+.container .btn {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 25px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+  }
+  .btn1{
+    background-color: #FFCA2C;
+    color:black;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+  }
+  .wallet{
+    position: absolute;
+    top: 3%;
+    left: 87%;
+  }
+
+
+
+
+
+ 

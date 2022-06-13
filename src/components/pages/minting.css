@@ -1,0 +1,132 @@
+.logo-minting {
+    position: relative;
+    left: 10%;
+    top: 14%;
+    padding-top: 2%;
+}
+
+.container-minting {
+    position: relative;
+}
+.minting-nft {
+    position: absolute;
+    top: 1%;
+    left: 14%;
+    color: #86ff00;
+    font-size: 65px;
+    line-height: 95%;
+}
+.first-mint {
+    position: absolute;
+    top:14%;
+    left: 12%;
+}
+
+.second-mint {
+    position: absolute;
+    top:14%;
+    left: 25%;
+}
+
+.third-mint {
+    position: absolute;
+    top:14%;
+    left: 38%;
+}
+
+.forth-mint {
+    position: absolute;
+    top:14%;
+    left: 51%;
+}
+.fifth-mint {
+    position: absolute;
+    top:14%;
+    left: 64%;
+}
+.sixth-mint {
+    position: absolute;
+    top:14%;
+    left: 77%;
+}
+.container-minting .btn-mint {
+    position: absolute;
+    top: 32%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 25px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 180px;
+}
+
+.container-minting .btn-mint:hover {
+    background-color: black;
+    color: white;
+}
+.nft-gif {
+    position: absolute;
+    top: 37%;
+    left: 40%;
+}
+.nft-first {
+    position: absolute;
+    top: 55%;
+    left:40%
+}
+.nft-minted {
+    position: absolute;
+    top:79%;
+    left:35%;
+    color: white;
+    font-size: 40px;
+}
+.mint-icons{
+    position: absolute;
+    top: 95%;
+    left: 45%
+}
+.mint-icons {
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 4rem;
+}
+
+.mint-icon{
+  position: absolute;
+  top: 95%;
+  left: 49%
+}
+.mint-icon {
+color: white;
+border-radius: 0.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 4rem;
+}
+.mint-icon1{
+  position: absolute;
+  top: 95%;
+  left: 53%
+}
+.mint-icon1{
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 4rem;
+}
