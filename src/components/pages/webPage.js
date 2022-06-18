@@ -5,7 +5,7 @@ import "./webPage.css"
 import BannerParis from "../../assets/images/Banner-2.png"
 import logo from "../../assets/images/Logo-white.png"
 import { Link } from "react-router-dom"
-import Wallet from './wallet'
+import {Login, account} from './wallet'
 import Home from './home'
 
 function Webpage() {
@@ -24,8 +24,8 @@ function Webpage() {
         alt="background"
       />
       <div class="wallet">
-         {!isConnected && <Wallet onLogin= {onLogin} onLogout={onLogout}/>}
-         {isConnected && <Home/>}
+         {!isConnected && <Login onLogin= {onLogin} onLogout={onLogout}/>}
+         {isConnected && <Home account = {account}/>}
       </div>
       <img
         src={logo}

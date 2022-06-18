@@ -60,4 +60,4 @@ const providerOptions = {
         <button onClick={onLoginHandler} type="button" class="btn1">Connect Wallet</button>
     )
   }
-export default Login
+export {Login, account}
