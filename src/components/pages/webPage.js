@@ -31,7 +31,7 @@ function Webpage() {
         {isConnected && <Home account={account} />}
 
       </div>
-          {isConnected && <Minting contract={contract} account={account} />}
+          {/* {isConnected && <Minting contract={contract} account={account} />} */}
       <img
         src={logo}
         alt="banner-1"

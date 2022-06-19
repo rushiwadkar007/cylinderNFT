@@ -9,17 +9,16 @@ import fifth from "../../assets/images/2.png"
 import sixth from "../../assets/images/5.png"
 import gif from "../../assets/images/gif.gif"
 import { Link } from "react-router-dom"
-import Web3 from "web3";
-import Web3Modal from 'web3modal';
+import { Login, account, contract } from './wallet'
 import "./minting.css"
 
 
 function minting(props) {
-  console.log("contract value ",props.account);
+  console.log("minting page  ", contract);
   const mint = () =>{
     // var _mintAmount = Number(document.querySelector("[name=amount]").value); 
-        
-      props.contract.methods.mintCylinder(1).send({ from: props.account, value: String(0 * (10**18)) }); 
+        let price = 10 ** 18;
+      contract.methods.mintCylinder(1,0, String(price)).send({ from: account }); 
   }
   return (
     <div class="">

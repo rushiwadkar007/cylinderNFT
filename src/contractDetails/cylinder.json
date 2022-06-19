@@ -114,11 +114,21 @@
                     "internalType": "uint256",
                     "name": "numberOfTokens",
                     "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_tokenID",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_tokenPrice",
+                    "type": "uint256"
                 }
             ],
             "name": "mintCylinder",
             "outputs": [],
-            "stateMutability": "payable",
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -731,6 +741,6 @@
             "type": "function"
         }
     ],
-    "ADDRESS": "0x74B9795eC72F06db47Caf0C5d33E7F2BcE992063",
-    "TransactionHash": "0x1932374cd39c1cca92d1b95c9956b74e20eaf69417a21b119f377ebae0c224f6"
+    "ADDRESS": "0x75f6a22A7b5D7a774F8Ce1108324239E60001Ecf",
+    "TransactionHash": "0xf72136635e07882017610a7537120598611016bc9ab30b38874ca042bed4df2c"
 }

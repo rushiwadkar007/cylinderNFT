@@ -10,8 +10,15 @@ import banner from "../../assets/images/Website-Banner.png"
 import { Link } from "react-router-dom"
 import Footer from "./footer"
 import "./aboutAll.css"
+import { Login, account, contract } from './wallet'
 
 function aboutAll() {
+
+  const buyNFT = () =>{
+    // var _mintAmount = Number(document.querySelector("[name=amount]").value); 
+        
+      contract.methods.transferPayment("0x568D136a5cfFE6b148a61770f5835fA32927d987", 0).send({ from: account, value: String(1 * (10**18)) }); 
+  }
   return (
     <div class="">
       <div>
@@ -73,7 +80,7 @@ function aboutAll() {
           class="forth"
           width="18%"
         />
-        <Link to="/minting"><button type="button" class="btn-minting">BUY NFT</button></Link>
+        <Link to="/minting"><button type="button" class="btn-minting" onClick={buyNFT}>BUY NFT</button></Link>
         <h1 class="buy-nft">HOW TO BUY CYLINDER EYES NFT</h1>
         <div class="buy-list">
           <ul>
