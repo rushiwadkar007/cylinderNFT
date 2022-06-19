@@ -141,6 +141,31 @@
             "type": "event"
         },
         {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "paymentTransferred",
+                    "type": "bool"
+                }
+            ],
+            "name": "PaymentTransferred",
+            "type": "event"
+        },
+        {
             "inputs": [],
             "name": "renounceOwnership",
             "outputs": [],
@@ -149,7 +174,7 @@
         },
         {
             "inputs": [],
-            "name": "reserveApes",
+            "name": "reserveCylinder",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -331,6 +356,24 @@
             "type": "function"
         },
         {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenID",
+                    "type": "uint256"
+                }
+            ],
+            "name": "transferPayment",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
             "inputs": [],
             "name": "withdraw",
             "outputs": [],
@@ -364,6 +407,25 @@
                     "internalType": "string",
                     "name": "",
                     "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_tokenID",
+                    "type": "uint256"
+                }
+            ],
+            "name": "checkPayment",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
                 }
             ],
             "stateMutability": "view",
@@ -669,5 +731,6 @@
             "type": "function"
         }
     ],
-    "ADDRESS": "0x568D136a5cfFE6b148a61770f5835fA32927d987"
+    "ADDRESS": "0x74B9795eC72F06db47Caf0C5d33E7F2BcE992063",
+    "TransactionHash": "0x1932374cd39c1cca92d1b95c9956b74e20eaf69417a21b119f377ebae0c224f6"
 }

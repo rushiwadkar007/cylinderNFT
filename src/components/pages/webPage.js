@@ -1,19 +1,22 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import background from "../../assets/images/background.png"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Banner from "../../assets/images/Banner-1.png"
 import "./webPage.css"
 import BannerParis from "../../assets/images/Banner-2.png"
 import logo from "../../assets/images/Logo-white.png"
 import { Link } from "react-router-dom"
-import {Login, account} from './wallet'
+import Minting from "./minting";
+import { Login, account, contract } from './wallet'
 import Home from './home'
 
 function Webpage() {
+  console.log("webpage ", contract);
   const [isConnected, setIsConnected] = useState(false);
-  const onLogin = () =>{
+  const onLogin = () => {
     setIsConnected(true);
   }
-  const onLogout = () =>{
+  const onLogout = () => {
     setIsConnected(false);
   }
   return (
@@ -24,9 +27,11 @@ function Webpage() {
         alt="background"
       />
       <div class="wallet">
-         {!isConnected && <Login onLogin= {onLogin} onLogout={onLogout}/>}
-         {isConnected && <Home account = {account}/>}
+        {!isConnected && <Login onLogin={onLogin} onLogout={onLogout} />}
+        {isConnected && <Home account={account} />}
+
       </div>
+          {isConnected && <Minting contract={contract} account={account} />}
       <img
         src={logo}
         alt="banner-1"
@@ -75,5 +80,5 @@ function Webpage() {
   )
 }
 
-export default Webpage
+export {Webpage }
 

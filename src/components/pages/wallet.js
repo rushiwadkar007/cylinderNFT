@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Web3 from "web3";
 import Web3Modal from 'web3modal';
 import WalletConnectProvider from '@walletconnect/web3-provider'
@@ -7,6 +7,7 @@ import WalletLink from 'walletlink'
 import './wallet.css'
 
 let account = null;
+let contract = null;
 const providerOptions = {
     binancechainwallet:{
       package:true
@@ -38,6 +39,7 @@ const providerOptions = {
   
   })
   function Login(props) {
+    const [currentAccount, setCurrentAccount] = useState(null);
     const detectProvider = () => {
       let provider = web3Modal.connect();
       return provider;
@@ -50,8 +52,9 @@ const providerOptions = {
     var accounts = await web3.eth.getAccounts(); 
     account = accounts[0]; 
     console.log(account);
+    setCurrentAccount(accounts[0])
     // document.getElementById('wallet-address').textContent = account;
-    var contract = new web3.eth.Contract(ABI, ADDRESS);
+    contract = new web3.eth.Contract(ABI, ADDRESS);
     console.log(contract);
     props.onLogin();
     
@@ -60,4 +63,4 @@ const providerOptions = {
         <button onClick={onLoginHandler} type="button" class="btn1">Connect Wallet</button>
     )
   }
-export {Login, account}
+export {Login, account, contract}

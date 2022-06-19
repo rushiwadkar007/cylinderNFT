@@ -9,10 +9,18 @@ import fifth from "../../assets/images/2.png"
 import sixth from "../../assets/images/5.png"
 import gif from "../../assets/images/gif.gif"
 import { Link } from "react-router-dom"
+import Web3 from "web3";
+import Web3Modal from 'web3modal';
 import "./minting.css"
 
 
-function minting() {
+function minting(props) {
+  console.log("contract value ",props.account);
+  const mint = () =>{
+    // var _mintAmount = Number(document.querySelector("[name=amount]").value); 
+        
+      props.contract.methods.mintCylinder(1).send({ from: props.account, value: String(0 * (10**18)) }); 
+  }
   return (
     <div class="">
       <div>
@@ -70,7 +78,7 @@ function minting() {
           class="sixth-mint"
           width="12%"
         />
-        <Link><button type="button" class="btn-mint">MINT NFT</button></Link>
+        <Link><button type="button" class="btn-mint" onClick={mint}>MINT NFT</button></Link>
         <img
           src={gif}
           alt="nft-gif"
